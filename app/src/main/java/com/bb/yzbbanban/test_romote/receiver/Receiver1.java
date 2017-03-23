@@ -1,4 +1,4 @@
-package com.bb.yzbbanban.test_romote;
+package com.bb.yzbbanban.test_romote.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

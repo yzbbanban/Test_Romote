@@ -3,6 +3,10 @@ package com.bb.yzbbanban.test_romote;
 import android.app.Application;
 import android.content.Context;
 
+import com.bb.yzbbanban.test_romote.receiver.Receiver1;
+import com.bb.yzbbanban.test_romote.receiver.Receiver2;
+import com.bb.yzbbanban.test_romote.service.Service1;
+import com.bb.yzbbanban.test_romote.service.Service2;
 import com.marswin89.marsdaemon.DaemonClient;
 import com.marswin89.marsdaemon.DaemonConfigurations;
 
@@ -25,11 +29,11 @@ public class MyApplication extends Application {
 
     private DaemonConfigurations createDaemonConfigurations(){
         DaemonConfigurations.DaemonConfiguration configuration1 = new DaemonConfigurations.DaemonConfiguration(
-                "com.bb.yzbbanban.test_romote:process1",
+                "com.bb.yzbbanban.test_romote:process11",
                 Service1.class.getCanonicalName(),
                 Receiver1.class.getCanonicalName());
         DaemonConfigurations.DaemonConfiguration configuration2 = new DaemonConfigurations.DaemonConfiguration(
-                "com.bb.yzbbanban.test_romote:process2",
+                "com.bb.yzbbanban.test_romote:process22",
                 Service2.class.getCanonicalName(),
                 Receiver2.class.getCanonicalName());
         DaemonConfigurations.DaemonListener listener = new MyDaemonListener();

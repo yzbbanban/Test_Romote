@@ -19,10 +19,10 @@
         </activity>
 
 
-        <service android:name=".Service1" android:process=":process1"/>
-        <receiver android:name=".Receiver1" android:process=":process1"/>
-        <service android:name=".Service2" android:process=":process2"/>
-        <receiver android:name=".Receiver2" android:process=":process2"/>
+        <service android:name=".service.Service1" android:process=":process11"/>
+        <receiver android:name=".receiver.Receiver1" android:process=":process11"/>
+        <service android:name=".service.Service2" android:process=":process22"/>
+        <receiver android:name=".receiver.Receiver2" android:process=":process22"/>
 
     </application>
 

@@ -1,9 +1,10 @@
-package com.bb.yzbbanban.test_romote;
+package com.bb.yzbbanban.test_romote.service;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
+import android.widget.Toast;
 
 /**
  * This Service is Persistent Service. Do some what you want to do here.<br/>
@@ -16,7 +17,10 @@ public class Service1 extends Service{
     public void onCreate() {
         super.onCreate();
         //TODO do some thing what you want..
-        Log.i(TAG, "onCreate: ");
+        Toast.makeText(this, "ban", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "ban", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "ban", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "ban", Toast.LENGTH_SHORT).show();
 
     }
 
